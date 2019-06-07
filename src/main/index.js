@@ -40,7 +40,7 @@ function createWindow() {
     mainWindow.focus();
   });
 
-   mainWindow.webContents.openDevTools({ detach: true });
+  // mainWindow.webContents.openDevTools({ detach: true });
 }
 
 app.on('ready', () => {
@@ -100,7 +100,6 @@ ipcMain.on('download', (event, downloadPath) => {
  */
 
 function sendUpdateMessage(message, data) {
-  console.log(data);
   mainWindow.webContents.send('update-message', { message, data });
 }
 
@@ -108,7 +107,6 @@ function sendUpdateMessage(message, data) {
 autoUpdater.autoInstallOnAppQuit = false;
 
 autoUpdater.on('error', data => {
-  console.log(data);
   sendUpdateMessage('error', data);
 });
 
@@ -119,19 +117,16 @@ autoUpdater.on('checking-for-update', data => {
 
 // 有可用更新
 autoUpdater.on('update-available', data => {
-  console.log(data);
   sendUpdateMessage('update-available', data);
 });
 
 // 已经最新
 autoUpdater.on('update-not-available', data => {
-  console.log(data);
   sendUpdateMessage('update-not-available', data);
 });
 
 // 更新下载进度事件
 autoUpdater.on('download-progress', data => {
-  console.log(data);
   sendUpdateMessage('download-progress', data);
 });
 // 更新下载完成事件(event, releaseNotes, releaseName, releaseDate, updateUrl, quitAndUpdate)
