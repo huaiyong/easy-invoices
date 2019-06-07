@@ -68,7 +68,7 @@
                 title="关于">
             <div class="aboutText">
                 <p><strong>easy-invoices {{version}}</strong></p>
-                <p>专注于桌面端单机版简易进销存业务，初心是帮助我父母提高工作效率。</p>
+                <p>专注于桌面端单机版简易进销存业务，初心是尝试自动化升级软件,提高工作效率。</p>
                 <p>该软件免费使用，并开源于<a href="javascript:void(0)"
                                   @click="openUrl('https://github.com/huaiyong/easy-invoices')">github</a>，目前只构建了windows版本。
                 </p>

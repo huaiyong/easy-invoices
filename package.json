@@ -55,13 +55,13 @@
       ]
     },
     "mac": {
-      "icon": "build/icons/icon.png"
+      "icon": "build/icons/logo.ico"
     },
     "win": {
-      "icon": "build/icons/icon.png"
+      "icon": "build/icons/logo.ico"
     },
     "linux": {
-      "icon": "build/icons/icon.png"
+      "icon": "build/icons/logo.ico"
     },
     "nsis": {
       "oneClick": false,
