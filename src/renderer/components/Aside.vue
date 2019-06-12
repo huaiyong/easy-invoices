@@ -67,10 +67,10 @@
                 v-model="modalShow"
                 title="关于">
             <div class="aboutText">
-                <p><strong>easy-invoices {{version}}</strong></p>
+                <p><strong>electron-vue-jeic {{version}}</strong></p>
                 <p>专注于桌面端单机版简易进销存业务，初心是尝试自动化升级软件,提高工作效率。</p>
                 <p>该软件免费使用，并开源于<a href="javascript:void(0)"
-                                  @click="openUrl('https://github.com/huaiyong/easy-invoices')">github</a>，目前只构建了windows版本。
+                                  @click="openUrl('https://github.com/huaiyong/electron-vue-jeic')">github</a>，目前只构建了windows版本。
                 </p>
                 <p>如果您有BUG反馈、意见或更好的建议，请联系我。</p>
                 <p>我的邮箱：<strong>770393167@qq.com</strong></p>

@@ -15,6 +15,7 @@ const winURL = process.env.NODE_ENV === 'development'
   : `file://${__dirname}/index.html`;
 
 function createWindow() {
+
   /**
    * Initial window options
    */
@@ -28,6 +29,7 @@ function createWindow() {
     show: false,
   });
 
+  console.log(winURL);
   mainWindow.loadURL(winURL);
 
   mainWindow.on('closed', () => {
@@ -46,6 +48,11 @@ function createWindow() {
 app.on('ready', () => {
   if (process.env.NODE_ENV === 'production') autoUpdater.checkForUpdatesAndNotify();
   // autoUpdater.checkForUpdatesAndNotify();
+  const path = require('path');
+  const { spawn } = require('child_process');
+  spawn('node', [ 'api.js' ], {
+    cwd: path.join(__dirname, '../express/'),
+  });
   createWindow();
 });
 

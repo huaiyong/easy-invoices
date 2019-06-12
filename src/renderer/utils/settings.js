@@ -3,7 +3,7 @@ import fse from 'fs-extra';
 import path from 'path';
 import os from 'os';
 
-export const docDir = path.join(os.homedir(), 'easy-invoices');
+export const docDir = path.join(os.homedir(), 'electron-vue-jeic');
 const settingsPath = path.join(docDir, 'settings.json');
 fse.ensureFileSync(settingsPath);
 

@@ -34,7 +34,7 @@
 <template>
     <header>
         <section class="left">
-            easy-invoices
+            electron-vue-jeic
         </section>
         <section class="version">
             {{updateText}}

@@ -1,4 +1,4 @@
-# easy-invoices
+# electron-vue-jeic
 
 > An electron-vue sqlite3 project
 
